@@ -46,3 +46,23 @@ app-example
 *firebase-adminsdk*.json
 *service-account*.json
 *serviceAccount*.json
+
+# Firebase / Google client config (contains API keys; supply via EAS file secret or keep local)
+google-services.json
+GoogleService-Info.plist
+
+# Environment files (public client values still belong in EAS env, not Git)
+.env
+.env.*
+!.env.example
+
+# Signing material and build outputs
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.apk
+*.aab
+/release/
+/android/app/build/
